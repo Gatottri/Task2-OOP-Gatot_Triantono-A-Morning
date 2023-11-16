@@ -19,6 +19,8 @@ fun main() {
     val score = 85
     val result: String
 
+    println("Score yang kamu punya akan menentukan hasilmu : ")
+
     if(score >= 90){
         result = "Selamat! Anda mendapatkan nilai A."
     } else if (score in 80 .. 89){

@@ -1,7 +1,7 @@
 package id.infinitelearning.KotlinSubmission.exercise4
 
 fun main() {
-    times(3,0)
+    modulus(3,0)
 }
 
     /**
@@ -9,7 +9,8 @@ fun main() {
      *
      */
     // Buat di bawah sini
-fun times(a: Int, b: Int) {
+fun modulus(a: Int, b: Int) {
+
     try {
         val hasil = (a % b)
         println("Hasil perkalian: $hasil")

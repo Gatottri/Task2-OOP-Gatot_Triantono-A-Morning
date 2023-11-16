@@ -67,6 +67,11 @@ fun main() {
      *
      */
     fun challenge(a : String, b : String, c : String, d : String, e : String, f:String){
+
+        println("Gatot memiliki beberapa kegiatan yang sudah dilakukan, " +
+                "seperti $a - $a, kemudian $b. Dilanjutkan dengan $c dan $d.\n Gatot juga melakukan " +
+                "sedikit olahraga yaitu $e dan beristirahat dengan $f")
+
         repeat(4) {hero.jalan() }
         repeat(1) {hero.lari() }
         repeat(3) {hero.makan() }
