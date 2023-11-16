@@ -10,6 +10,15 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val firstname : String = "Gatot"
+    val lastname : String = "Triantono"
+    val age : Int = 20
+    val status : Boolean = true
+
+    println("My first name = $firstname")
+    println("My last name = $lastname")
+    println("My age = $age tahun")
+    println("Status = ${if (status) "Single" else "Pacaran"}")
 
 }
 
@@ -19,6 +28,11 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
+    println("Group = $groupId")
+
+    println("Group members = $groupMember")
+
+    println("Session = $session")
     return ""
 }
 
@@ -29,8 +43,13 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
+    val myTeamMob = listOf("Gatot Triantono ",
+        "M. Raihan Aryadevin ", "Muhammad Vito Firdaus ",
+        "Fauzan Zidni ", "Anis Saputri ")
 
-    return listOf()
+    val myName = myTeamMob [0]
+
+    return listOf(myName)
 }
 
 /**
@@ -41,10 +60,13 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf<String>("Mas Fateh", "Mas Raihan")
+    val countOfGroup = arrayOf<String>("Gatot Triantono ", "Della Humairoh ",
+        "M. Raihan Aryadevin ", "Muhammad Vito Firdaus ", "Hamdani Zulva ", "Ichsan Fadillah ",
+        "Abdul Hafizh Subhan ", "Erika Tangsi Rante ", "Fauzan Zidni ", "Anis Saputri ")
 
-    return 0
+    val totalMember = mentor.size + countOfGroup.size
+    return totalMember
 }
 
 fun main() {
@@ -62,6 +84,12 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail("Shelter Nerd",
+
+        listOf("Gatot Triantono ", "Della Humairoh ",
+            "M. Raihan Aryadevin ", "Muhammad Vito Firdaus ", "Hamdani Zulva ", "Ichsan Fadillah ",
+            "Abdul Hafizh Subhan ", "Erika Tangsi Rante ", "Fauzan Zidni ", "Anis Saputri "),
+
+        "Morning")
 
 }
